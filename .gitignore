@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+nasbnn_env/
+.ipynb_checkpoints/
+
+# STM32CubeIDE build artifacts
+stm32_firmware/Debug/
+stm32_firmware/Release/
+*.elf
+*.map
+*.list
+*.bin
+*.hex
+*.o
+*.d
+
+# LaTeX build
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.toc
+
+# Large model files — download from GitHub Releases
+checkpoints/*.pth.tar
+checkpoints/*.pth
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
