@@ -1,6 +1,8 @@
 # BNN-WakeVision-STM32
 
-Binary Neural Network deployment on STM32H7B3I-DK for [WakeVision](https://github.com/mit-han-lab/wake-vision) person detection.
+Binary Neural Network deployment on STM32H7B3I-DK for [WakeVision](https://github.com/harvard-edge/Wake_Vision) person detection.
+
+Accompanying paper: **"Binarized Wake-Up of Conversational Agents on an Industry-Grade High-Performance Microcontroller"**, IEEE COINS 2026 — see [`paper/main.pdf`](paper/main.pdf).
 
 Two complete binary deployment pipelines on a single Cortex-M7 target (280 MHz, 1.4 MB SRAM, 2 MB Flash):
 
@@ -53,7 +55,7 @@ CBin-NN collapses flash 56.62 KiB → **7.03 KiB** (cross-channel bit-packing) a
 ├── LICENSE
 ├── README.md
 ├── figures/               # PNG figures for documentation
-├── paper/                 # Published paper (PDF)
+├── paper/                 # Camera-ready paper (IEEE COINS 2026, PDF)
 ├── nasbnn/                # NAS-BNN supernet, search, fine-tuning, LCE export
 ├── checkpoints/           # Fine-tuned PyTorch checkpoints — see Releases ↓
 ├── search_results/        # Diversity-aware Pareto search artifacts
@@ -128,6 +130,13 @@ Diversity-aware parent selection: 70% Pareto front / 20% non-Pareto re-explorati
 If this work is useful, please cite:
 
 ```bibtex
+@inproceedings{mohammady2026binarized,
+  author    = {Mohammady, Sepehr and Ballout, Hadi and Bellotti, Francesco and Lazzaroni, Luca and Berta, Riccardo and Fresta, Matteo and Saad, Ammar and Pighetti, Alessandro},
+  title     = {Binarized Wake-Up of Conversational Agents on an Industry-Grade High-Performance Microcontroller},
+  booktitle = {Proc. IEEE Int. Conf. Omni-layer Intelligent Systems (COINS)},
+  year      = {2026}
+}
+
 @article{lin2025nasbnn,
   author  = {Lin, Zhihao and Wang, Yongtao and Zhang, Jinhe and Chu, Xiaojie and Ling, Haibin},
   title   = {{NAS-BNN}: Neural Architecture Search for Binary Neural Networks},
